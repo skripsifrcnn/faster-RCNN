@@ -69,7 +69,7 @@ if 'bg' not in classes_count:
 
 C.class_mapping = class_mapping
 
-inv_map = {v: k for k, v in class_mapping.iteritems()}
+inv_map = {v: k for k, v in class_mapping.items()}
 
 print('Training images per class:')
 pprint.pprint(classes_count)
@@ -77,7 +77,7 @@ print('Num classes (including bg) = {}'.format(len(classes_count)))
 
 config_output_filename = options.config_filename
 
-with open(config_output_filename, 'w') as config_f:
+with open(config_output_filename, 'bw') as config_f:
 	pickle.dump(C,config_f)
 	print('Config has been written to {}, and can be loaded when testing to ensure correct results'.format(config_output_filename))
 
