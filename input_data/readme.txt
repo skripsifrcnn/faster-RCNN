@@ -1,0 +1,1 @@
+berisi seluruh citra/frame yang akan diuji sekaligus oleh sistem
